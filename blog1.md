@@ -32,7 +32,7 @@ Tuy vậy mcp cũng không phải vạn năng, mình thấy AI dù đọc code n
 
 ![alt text](image-5.png)
 
-Và mình cũng không đủ token để cầm mcp 1 shot một mẫu mã độc như chơi ctf, nên cũng dùng tiết kiệm để không rơi vào hoàn cảnh này(hiện tại thì xài AI lậu như st36k rồi).
+Và mình cũng không đủ token để cầm mcp 1 shot một mẫu mã độc như chơi ctf, nên cũng dùng tiết kiệm để không rơi vào hoàn cảnh này(hiện tại thì xài AI lậu như đăng kí st36k rồi).
 
 ![alt text](image-7.png)
 
