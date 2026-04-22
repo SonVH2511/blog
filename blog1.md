@@ -117,4 +117,4 @@ Cái này cũng không có gì :v. Chỉ là trong lúc code trên MVSC, mình c
 
 ![alt text](image-14.png)
 
-Không ngờ viết chút chút mà mệt hơn hẳn ngồi viết wu, Hi vọng có thể duy trì :()
+Không ngờ viết chút chút mà mệt hơn hẳn ngồi viết wu, đến đoạn cuối hết sức đọc lại trông chán hẳn. Hi vọng có thể cải thiện trong những bài sau và duy trì :()
