@@ -115,4 +115,6 @@ Cái này cũng không có gì :v. Chỉ là trong lúc code trên MVSC, mình c
 
 Đó là một vài plugin mình thấy hữu ích chia sẻ ra, mỗi plugin đều hữu dụng nhưng vẫn còn hạn chế như đã kể trên, tuy vậy cũng dễ dàng cải thiện. Hi vọng có thể giúp mn tham khảo :v
 
+![alt text](image-14.png)
+
 Không ngờ viết chút chút mà mệt hơn hẳn ngồi viết wu, Hi vọng có thể duy trì :()
