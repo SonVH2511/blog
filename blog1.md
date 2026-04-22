@@ -16,7 +16,7 @@ Tất nhiên là mình không phải kiểu người thích tự làm khó bản
 
 Dưới đây mình sẽ điểm qua những plugin từ cần thiết nhất đến những plugin mình tự xây dựng trong quá trình sử dụng IDA. Có thể có thứ hữu dụng với mình nhưng lại vô dụng với người khác, hi vọng ae thấy được thứ gì hay ho để thêm vào folder plugin của chính mình :v
 
-### IDA-MCP
+#### IDA-MCP
 
 Nguồn: https://github.com/mrexodia/ida-pro-mcp
 
@@ -40,7 +40,7 @@ Vậy nên enjoy thôi, những thứ AI có thể 1 shot được cũng chẳng
 
 Luyên thuyên vậy rồi tóm lại là MCP làm được những gì? thứ mcp hỗ trợ được nhiều nhất đấy là đọc code và phân tích tĩnh. Như đã nói ở trên rằng AI đọc code cực nhanh-> tóm tắt luồng chương trình, ý đồ và chỉ ra được những thứ được giấu ở tít trong những cái wraper tận đâu đó của chương trình. Mình thấy giúp cải thiện tốc độ và độ chính xác khá nhiều. Tóm lại là một plugin không thể thiếu.
 
-### htrng
+#### htrng
 
 Nguồn: https://github.com/KasperskyLab/hrtng
 
@@ -52,9 +52,9 @@ Về tính năng thì như ảnh dưới đây là 1 nửa tính năng của nó
 
 Nhưng tóm tắt lại những thứ quan trọng nhất nó mang lại là deobf cơ bản `CFF`, deobf `MBA`, collapse code, hỗ trợ analize bằng cách auto cmt string trong const, auto rename,...Cùng với vô vàn tính năng khác mà mình còn chưa tìm hiểu hết hoặc đang dùng mà không nhớ ra.
 
-Mặc dù toàn diện là vậy, nhưng vẫn có chỗ không đủ tốt. Ví như cái chức năng deobf CFF, chỉ có thể deobf
+Mặc dù toàn diện là vậy, nhưng vẫn có chỗ không đủ tốt. Ví như cái chức năng deobf CFF, chỉ có thể deobf cơ bản, có khi còn mất 1 phần code. Hay như cái deobf MBA lại chỉ deobf với biến thông thường, những biểu thức chèn var là 1 hàm thì lại chịu chết :)))
 
-### dereferencing
+#### dereferencing
 
 Nguồn: https://github.com/danigargu/deREferencing
 
@@ -70,3 +70,49 @@ Và `dereferencing` có thể giải quyết vấn đề trên.
 
 ![alt text](image-8.png)
 
+Trông dễ nhìn hẳn, những string được trỏ vào hiện rõ ra, biết được cái gì được đẩy vào thanh ghi, stack.
+
+#### patching
+
+Nguồn: https://github.com/gaasedelen/patching
+
+Tất nhiên không phải là vì ida không thể patch, nhưng chức năng patch của ida hơi tộc, cái này vừa giao diện đẹp, vừa dễ dùng lại patch được nhiều ins.
+
+![alt text](image-10.png)
+
+Nhưng khi patch vẫn không tránh khỏi 1 vài vấn đề, khi patch thành `jump`,... à thôi, có thể tự cài và trải nghiệm :v
+
+#### Aphrodite
+
+Nguồn: https://github.com/leommxj/AphroditeF5
+
+Con hàng này khá thực dụng, mặc dù htrng cũng có chức năng tương tự nhưng rườm rà và không đúng ý của mình lắm, đơn giản là để thu gọn phần code trong cặp ngoặc, giúp mình review code dễ hơn, đỡ ngợp vì dài.
+
+![alt text](image-11.png)
+
+Sau đó sẽ trông như này.
+
+![alt text](image-12.png)
+
+Tuy nhiên hơi ngố chút là mỗi lần F5 hoặc từ hàm con back lại thì những chỗ ẩn đi bằng `Aphrodite` lại bung ra, chắc sau tìm cách nâng cấp. Nếu ai có hứng thú thì có thể tham khảo cách mà tính năng collapse declaration này không bị bung ra khi F5.
+
+![alt text](image-13.png)
+![alt text](image-15.png)
+
+#### IDA-Scyllahide
+
+Tham khảo tại https://sonvh2511.github.io/post/?slug=ida-scyllahide
+
+Tự động hóa quá trình inject con dll của scyllahide vào tiến trình hiện tại.
+
+#### IDA renew
+
+Nguồn: https://sonvh2511.github.io/post/?slug=renew
+
+Cái này cũng không có gì :v. Chỉ là trong lúc code trên MVSC, mình có thói quen debug trên ida chứ không debug trên compiler đó. Mà mỗi lần sửa code 1 chút lại phải tắt đi load lại thì khá phiền nên sinh ra tool này :). Đơn giản là tự động hóa quá trình tắt đi bật lại cho đỡ tốn thao tác :v
+
+### Lời kết
+
+Đó là một vài plugin mình thấy hữu ích chia sẻ ra, mỗi plugin đều hữu dụng nhưng vẫn còn hạn chế như đã kể trên, tuy vậy cũng dễ dàng cải thiện. Hi vọng có thể giúp mn tham khảo :v
+
+Không ngờ viết chút chút mà mệt hơn hẳn ngồi viết wu, Hi vọng có thể duy trì :()
