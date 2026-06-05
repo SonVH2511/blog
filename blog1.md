@@ -72,7 +72,7 @@ Và `dereferencing` có thể giải quyết vấn đề trên.
 
 Trông dễ nhìn hẳn, những string được trỏ vào hiện rõ ra, biết được cái gì được đẩy vào thanh ghi, stack.
 
-#### patching
+#### Patching
 
 Nguồn: https://github.com/gaasedelen/patching
 
@@ -105,11 +105,21 @@ Tham khảo tại https://sonvh2511.github.io/post/?slug=ida-scyllahide
 
 Tự động hóa quá trình inject con dll của scyllahide vào tiến trình hiện tại.
 
-#### IDA renew
+![alt text](image-17.png)
 
-Nguồn: https://sonvh2511.github.io/post/?slug=renew
+### Enhance dumper
 
-Cái này cũng không có gì :v. Chỉ là trong lúc code trên MVSC, mình có thói quen debug trên ida chứ không debug trên compiler đó. Mà mỗi lần sửa code 1 chút lại phải tắt đi load lại thì khá phiền nên sinh ra tool này :). Đơn giản là tự động hóa quá trình tắt đi bật lại cho đỡ tốn thao tác :v
+Tham khảo tại https://github.com/SonVH2511/EnhanceDumper
+
+Cái này mình dùng để dump dải byte to, dump asm 1 hàm
+
+![alt text](image-16.png)
+
+Trong quá trình mình làm thì thấy thi thoảng lại cần dump byte ra, viết idapython thì cũng ngắn thôi nhưng lần nào cũng phải viết thì hơi bất tiện.
+
+Nên mới sinh ra con plugin này, nó tất nhiên không chuyên dụng như scylla, ollydumper, nhưng nó làm được vài điều những dumper chỉ dump PE này không làm được(những điều phù hợp với nhu cầu tiện ích cá nhân mình) :v.
+
+Dùng để dump nhanh rất tiện nha, deobf hay làm gì đấy cần diff asm cũng dễ dàng dump theo function tại cur ptr. cũng hỗ trợ dump PE raw/image nữa, tất nhiên là không hỗ trợ fix, nếu cần fix hay làm gì đó thì cứ dùng những công cụ chuyên dụng hơn.
 
 #### personal plugin
 
