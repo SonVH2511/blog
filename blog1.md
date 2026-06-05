@@ -111,6 +111,14 @@ Nguồn: https://sonvh2511.github.io/post/?slug=renew
 
 Cái này cũng không có gì :v. Chỉ là trong lúc code trên MVSC, mình có thói quen debug trên ida chứ không debug trên compiler đó. Mà mỗi lần sửa code 1 chút lại phải tắt đi load lại thì khá phiền nên sinh ra tool này :). Đơn giản là tự động hóa quá trình tắt đi bật lại cho đỡ tốn thao tác :v
 
+#### personal plugin
+
+Thực ra có kể bao nhiêu cái cũng không thấy đủ, một vài cái plugin mình thấy quan trọng hơn nhiều cũng không có trong này, cơ bản là hàng tự làm kì công nên không public :)). Cũng có 1 số plugin trong này mình cũng không dùng tới nữa...
+
+Ý muốn nói tới ở đây là những thứ định hình phong cách bản thân thì nên tự xây dựng mà dùng, đặc biệt trong thời đại AI phát triển như này, đẻ 1 cái plugin chắc cũng chỉ mất 1 prompt.
+
+Vậy nên mình chỉ share tới đây thôi, cũng là những plugin hỗ trợ mình trong giai đoạn đầu, hiện thì có thể không phải nữa, những chắc những bạn mới có thể cần :v.
+
 ### Lời kết
 
 Đó là một vài plugin mình thấy hữu ích chia sẻ ra, mỗi plugin đều hữu dụng nhưng vẫn còn hạn chế như đã kể trên, tuy vậy cũng dễ dàng cải thiện. Hi vọng có thể giúp mn tham khảo :v
