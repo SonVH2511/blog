@@ -6,7 +6,7 @@ Hehe bài blog đầu tiên, phân vân không biết nên phải viết gì, th
 
 Chủ đề lần này như mọi người thấy ở tiêu đề bên ngoài. Lý do là, 'thiz' m l1f3 dis4ssembler'.
 
-Bất kể là cái dissasembler nào, không có 1 bộ kit ngon thì con đường sẽ trắc trở vô cùng. Để mà so sánh thì dùng ida không plugin chắc cũng như code trên vscode mà không cài extension nào vậy :)). Và càng tiện ích thì ta càng công muốn động đến những thứ thiếu tính năng như VIM hay Ghira.
+Bất kể là cái disassembler nào, không có 1 bộ kit ngon thì con đường sẽ trắc trở vô cùng. Để mà so sánh thì dùng ida không plugin chắc cũng như code trên vscode mà không cài extension nào vậy :)). Và càng tiện ích thì ta càng công muốn động đến những thứ thiếu tính năng như VIM hay Ghira.
 
 ![alt text](image-1.png)
 
@@ -38,7 +38,7 @@ Và mình cũng không đủ token để cầm mcp 1 shot một mẫu mã độc
 
 Vậy nên enjoy thôi, những thứ AI có thể 1 shot được cũng chẳng đáng để mình làm, thứ mà mình hướng đến hiện tại là những bài toán thực sự khó. Focus vào tư duy giải quyết, coding và những việc lặt vặt thì lọ AI là được.
 
-Luyên thuyên vậy rồi tóm lại là MCP làm được những gì? thứ mcp hỗ trợ được nhiều nhất đấy là đọc code và phân tích tĩnh. Như đã nói ở trên rằng AI đọc code cực nhanh-> tóm tắt luồng chương trình, ý đồ và chỉ ra được những thứ được giấu ở tít trong những cái wraper tận đâu đó của chương trình. Mình thấy giúp cải thiện tốc độ và độ chính xác khá nhiều. Tóm lại là một plugin không thể thiếu.
+Luyên thuyên vậy rồi tóm lại là MCP làm được những gì? thứ mcp hỗ trợ được nhiều nhất đấy là đọc code và phân tích tĩnh. Như đã nói ở trên rằng AI đọc code cực nhanh-> tóm tắt luồng chương trình, ý đồ và chỉ ra được những thứ được giấu ở tít trong những cái wrapper tận đâu đó của chương trình. Mình thấy giúp cải thiện tốc độ và độ chính xác khá nhiều. Tóm lại là một plugin không thể thiếu.
 
 #### htrng
 
@@ -52,7 +52,7 @@ Về tính năng thì như ảnh dưới đây là 1 nửa tính năng của nó
 
 Nhưng tóm tắt lại những thứ quan trọng nhất nó mang lại là deobf cơ bản `CFF`, deobf `MBA`, collapse code, hỗ trợ analize bằng cách auto cmt string trong const, auto rename,...Cùng với vô vàn tính năng khác mà mình còn chưa tìm hiểu hết hoặc đang dùng mà không nhớ ra.
 
-Mặc dù toàn diện là vậy, nhưng vẫn có chỗ không đủ tốt. Ví như cái chức năng deobf CFF, chỉ có thể deobf cơ bản, có khi còn mất 1 phần code. Hay như cái deobf MBA lại chỉ deobf với biến thông thường, những biểu thức chèn var là 1 hàm thì lại chịu chết :)))
+Mặc dù toàn diện là vậy, nhưng vẫn có chỗ không đủ tốt. Ví như cái chức năng deobf CFF, chỉ có thể deobf cơ bản, có khi còn mất 1 phần code, deobf sai. Hay như cái deobf MBA lại chỉ deobf với biến thông thường, những biểu thức chèn var là 1 hàm thì lại chịu chết :)))
 
 #### dereferencing
 
