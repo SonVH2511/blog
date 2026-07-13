@@ -18,7 +18,7 @@ Dưới đây mình sẽ điểm qua những plugin từ cần thiết nhất đ
 
 #### IDA-MCP
 
-Nguồn: https://github.com/mrexodia/ida-pro-mcp
+Nguồn: https://github.com/mrexodia/ida-pro-mcp(hiện tại cũng đã có vài bản oke hơn với option đa dạng nhưng con này kéo về mod lại tí là dùng đc)
 
 Ờ thì, chắc không còn gì để cạnh tranh được ngôi vị số 1 của plugin này. Dưới sự phát triển của AI mà vẫn còn rev chay thì hơi đúng là hơi "bot".
 
