@@ -6,7 +6,7 @@ Hehe bài blog đầu tiên, phân vân không biết nên phải viết gì, th
 
 Chủ đề lần này như mọi người thấy ở tiêu đề bên ngoài. Lý do là, 'thiz' m l1f3 dis4ssembler'.
 
-Bất kể là cái dissasembler nào, không có 1 bộ kit ngon thì con đường sẽ trắc trở vô cùng. Để mà so sánh thì dùng ida không plugin chắc cũng như code trên vscode mà không cài extension nào vậy :)). Và càng tiện ích thì ta càng công muốn động đến những thứ thiếu tính năng như VIM hay Ghira.
+Bất kể là cái disassembler nào, không có 1 bộ kit ngon thì con đường sẽ trắc trở vô cùng. Để mà so sánh thì dùng ida không plugin chắc cũng như code trên vscode mà không cài extension nào vậy :)). Và càng tiện ích thì ta càng công muốn động đến những thứ thiếu tính năng như VIM hay Ghira.
 
 ![alt text](image-1.png)
 
@@ -38,7 +38,7 @@ Và mình cũng không đủ token để cầm mcp 1 shot một mẫu mã độc
 
 Vậy nên enjoy thôi, những thứ AI có thể 1 shot được cũng chẳng đáng để mình làm, thứ mà mình hướng đến hiện tại là những bài toán thực sự khó. Focus vào tư duy giải quyết, coding và những việc lặt vặt thì lọ AI là được.
 
-Luyên thuyên vậy rồi tóm lại là MCP làm được những gì? thứ mcp hỗ trợ được nhiều nhất đấy là đọc code và phân tích tĩnh. Như đã nói ở trên rằng AI đọc code cực nhanh-> tóm tắt luồng chương trình, ý đồ và chỉ ra được những thứ được giấu ở tít trong những cái wraper tận đâu đó của chương trình. Mình thấy giúp cải thiện tốc độ và độ chính xác khá nhiều. Tóm lại là một plugin không thể thiếu.
+Luyên thuyên vậy rồi tóm lại là MCP làm được những gì? thứ mcp hỗ trợ được nhiều nhất đấy là đọc code và phân tích tĩnh. Như đã nói ở trên rằng AI đọc code cực nhanh-> tóm tắt luồng chương trình, ý đồ và chỉ ra được những thứ được giấu ở tít trong những cái wrapper tận đâu đó của chương trình. Mình thấy giúp cải thiện tốc độ và độ chính xác khá nhiều. Tóm lại là một plugin không thể thiếu.
 
 #### htrng
 
@@ -52,7 +52,7 @@ Về tính năng thì như ảnh dưới đây là 1 nửa tính năng của nó
 
 Nhưng tóm tắt lại những thứ quan trọng nhất nó mang lại là deobf cơ bản `CFF`, deobf `MBA`, collapse code, hỗ trợ analize bằng cách auto cmt string trong const, auto rename,...Cùng với vô vàn tính năng khác mà mình còn chưa tìm hiểu hết hoặc đang dùng mà không nhớ ra.
 
-Mặc dù toàn diện là vậy, nhưng vẫn có chỗ không đủ tốt. Ví như cái chức năng deobf CFF, chỉ có thể deobf cơ bản, có khi còn mất 1 phần code. Hay như cái deobf MBA lại chỉ deobf với biến thông thường, những biểu thức chèn var là 1 hàm thì lại chịu chết :)))
+Mặc dù toàn diện là vậy, nhưng vẫn có chỗ không đủ tốt. Ví như cái chức năng deobf CFF, chỉ có thể deobf cơ bản, có khi còn mất 1 phần code, deobf sai. Hay như cái deobf MBA lại chỉ deobf với biến thông thường, những biểu thức chèn var là 1 hàm thì lại chịu chết :)))
 
 #### dereferencing
 
@@ -72,7 +72,7 @@ Và `dereferencing` có thể giải quyết vấn đề trên.
 
 Trông dễ nhìn hẳn, những string được trỏ vào hiện rõ ra, biết được cái gì được đẩy vào thanh ghi, stack.
 
-#### patching
+#### Patching
 
 Nguồn: https://github.com/gaasedelen/patching
 
@@ -105,11 +105,29 @@ Tham khảo tại https://sonvh2511.github.io/post/?slug=ida-scyllahide
 
 Tự động hóa quá trình inject con dll của scyllahide vào tiến trình hiện tại.
 
-#### IDA renew
+![alt text](image-17.png)
 
-Nguồn: https://sonvh2511.github.io/post/?slug=renew
+### Enhance dumper
 
-Cái này cũng không có gì :v. Chỉ là trong lúc code trên MVSC, mình có thói quen debug trên ida chứ không debug trên compiler đó. Mà mỗi lần sửa code 1 chút lại phải tắt đi load lại thì khá phiền nên sinh ra tool này :). Đơn giản là tự động hóa quá trình tắt đi bật lại cho đỡ tốn thao tác :v
+Tham khảo tại https://github.com/SonVH2511/EnhanceDumper
+
+Cái này mình dùng để dump dải byte to, dump asm 1 hàm, dump nhanh 1 con PE.
+
+![alt text](image-18.png)
+
+Trong quá trình mình làm thì thấy thi thoảng lại cần dump byte ra, viết idapython thì cũng ngắn thôi nhưng lần nào cũng phải viết thì hơi bất tiện.
+
+Nên mới sinh ra con plugin này, nó tất nhiên không chuyên dụng như scylla, ollydumper, nhưng nó làm được vài điều những dumper chỉ dump PE này không làm được(những điều phù hợp với nhu cầu tiện ích cá nhân mình) :v.
+
+Dùng để dump nhanh rất tiện nha, deobf hay làm gì đấy cần diff asm cũng dễ dàng dump theo function tại cur ptr. cũng hỗ trợ dump PE raw/image nữa, tất nhiên là không hỗ trợ fix, nếu cần fix hay làm gì đó thì cứ dùng những công cụ chuyên dụng hơn.
+
+#### personal plugin
+
+Thực ra có kể bao nhiêu cái cũng không thấy đủ, một vài cái plugin mình thấy quan trọng hơn nhiều cũng không có trong này, cơ bản là hàng tự làm kì công nên không public :)). Cũng có 1 số plugin trong này mình cũng không dùng tới nữa...
+
+Ý muốn nói tới ở đây là những thứ định hình phong cách bản thân thì nên tự xây dựng mà dùng, đặc biệt trong thời đại AI phát triển như này, đẻ 1 cái plugin chắc cũng chỉ mất 1 prompt.
+
+Vậy nên mình chỉ share tới đây thôi, cũng là những plugin hỗ trợ mình trong giai đoạn đầu, hiện thì có thể không phải nữa, những chắc những bạn mới có thể cần :v.
 
 ### Lời kết
 
